@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and clear</title>
+    <style>
+        .container{
+            width: 1000px;
+            margin: 33px auto;
+            border: 3px solid red;
+            background-color: rgb(233, 130, 12);
+        }
+        .redbg{
+            background-color: aqua;
+            border: 4px solid blue;
+            border-radius: 4px;
+            width: 400px;
+            padding: 30px 40px;
+            margin: 12px 3px;
+
+        }
+        #first{
+            float: right;
+            width: 48%;
+        }
+        #second{
+            float: left;
+            width: 48%;
+        }
+        #third{
+            clear: both;
+            clear: left;
+            width: 100%;
+        }
+        p,h3{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>float and clear</h1>
+    <div id="first" class="redbg">
+        <h3>first heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa fuga provident quidem voluptatibus inventore ut sunt asperiores autem, tempora excepturi odio sint corrupti aliquid tempore illo voluptate doloribus ipsam non. Reiciendis at cum saepe, dolor vero sed excepturi commodi sit id neque sapiente accusantium, quam similique illum libero voluptates maxime?</p>
+    </div>
+    <div id="second" class="redbg">
+        <h3>second heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias deserunt earum odio cum asperiores dolor reprehenderit illo eius repellat veritatis corporis, id repellendus! Perspiciatis nostrum numquam a, fugiat nesciunt veritatis adipisci quos quasi nihil eos dignissimos obcaecati id, beatae doloremque. Repudiandae, eveniet obcaecati? Iure sed blanditiis saepe odit non quas ut quis mollitia adipisci alias unde, molestiae molestias distinctio aspernatur.</p>
+
+    </div>
+    <div id="third" class="redbg">
+        <h3>third heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, sint aliquid, culpa deserunt quasi ratione, perferendis ipsam veniam voluptatibus eos dolorem nisi sunt perspiciatis excepturi. Aspernatur illo sapiente expedita excepturi id voluptatum quae dolor eaque quasi modi consequuntur libero culpa magni nobis iure, sunt nesciunt aperiam nostrum, officiis laudantium dolores. Dolorum repellat, eius, rerum, culpa harum distinctio et aspernatur facilis eaque ab modi nam magni odio aliquid non. Eum, accusantium.</p>
+    </div>
+</div>
+</body>
+</html>

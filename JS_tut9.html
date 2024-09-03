@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops</title>
+</head>
+<body>
+    <h1>while, for, do-while loops</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, temporibus!</p>
+</body>
+<script>
+    for(let i=0;i<3;i++){
+        console.log(i);
+    }
+    let name =['harry', 'rohan', 'rahul', 'rohit','rishav'];
+    for(let index= 0;index<name.length;index++){
+    console.log(name[index]);
+    }
+    name.forEach(function f(element) {
+        console.log("Hello friend "+element+ " welcome to javascript");
+        
+    });
+    for(element of name){
+        console.log("hello friend "+element+" welocome to javascript");
+    }
+    let employee={
+        name :"harry",
+        salary: "10000",
+        channel: "cwh",
+    }
+    for(key in employee){
+        console.log(` the ${key} of employee is ${employee[key]}`);
+    }
+    let j=0;
+    while(j<4){
+        console.log(`${j} is lesser than 4`);
+        j++;
+    }
+    let k=0;
+    do{
+        console.log(`${k} is lesser to 4`);
+        k++;
+    }while(k<4);
+</script>
+
+</html>

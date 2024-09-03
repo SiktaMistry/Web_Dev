@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables and custom properties</title>
+    <style>
+        :root{
+            --primary-color:blue;
+            --danger-color:red;
+            --maxw:400px;
+        }
+        /* .box{
+     width: 200px;
+     height: 200px;
+     background-color: blue;
+     border: 2px solid red;
+     margin: 2px 9px;
+} */
+/* .box{
+    --box-color:violet;
+    width: 200px;
+    height: 200px;
+    background-color: var(--box-color);
+    box-shadow: 10px 14px 5px var(--box-color);
+    border: 2px solid var(--box-color);
+    margin: 20px;
+} */
+.box{
+    width: var(--maxw);
+    height: var(--maxw);
+    margin: 50px 15px;
+    background-color: var(--primary-color);
+    color: var(--danger-color);
+    border: 5px solid var(--danger-color) ;
+    box-shadow: 10px 15px 5px var(--primary-color);
+    text-align: center ;
+    font-size: 60px;
+}
+.container{
+            margin: auto;
+            background-color: var(--danger-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color: var(--box-color); */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Hello World</div>
+        <div class="box">Thank You</div>
+        <div class="box">welcome all</div>
+    </div>
+
+</body>
+</html>
